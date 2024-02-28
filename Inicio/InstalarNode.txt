@@ -29,7 +29,7 @@ poner el siguiente codigo:
   @tailwind utilities;
 
 Ahora creamos un script en package.json: 
-  "css": "postcss public/css/tailwind.css -o public/css/app.css"
+  "css": "postcss public/css/tailwind.css -o public/css/app.css --watch"
 
 Ejecutamos npm run css y deberia crearse un archivo llamado app.css
 en la carpeta public/css.
