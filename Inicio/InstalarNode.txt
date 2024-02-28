@@ -20,10 +20,16 @@ En el archivo tailwind.config.js poner:
   }
 
 
-Crear una carpeta views en la raiz del proyecto y dentro otra 
+Crear una carpeta public en la raiz del proyecto y dentro otra 
 carpeta llamada css y dentro un archivo llamado tailwind.css y dentro 
 poner el siguiente codigo:
 
   @tailwind base; 
   @tailwind components;
   @tailwind utilities;
+
+Ahora creamos un script en package.json: 
+  "css": "postcss public/css/tailwind.css -o public/css/app.css"
+
+Ejecutamos npm run css y deberia crearse un archivo llamado app.css
+en la carpeta public/css.
